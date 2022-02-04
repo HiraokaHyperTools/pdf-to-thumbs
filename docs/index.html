@@ -9,12 +9,19 @@
             margin-left: 3px;
         }
     </style>
+    <style type="text/css" media="print">
+        h1,
+        .credits,
+        .toolbar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <h1>pdf-to-thumbs</h1>
-    <p>Thanks to <a href="https://mozilla.github.io/pdf.js/" target="_blank">PDF.js</a></p>
-    <div>
+    <p class="credits">Thanks to <a href="https://mozilla.github.io/pdf.js/" target="_blank">PDF.js</a></p>
+    <div class="toolbar">
         PDF: <input type="file" accept="application/pdf" id="pdfInput" multiple>
         |
         倍率: <input value="0.3" type="number" id="scale">
